@@ -78,5 +78,33 @@ div {
     The body tag tells it to be 600 px wide.  It's 200 px tall b/c div style tells it to be.  
     * It obeys until they disagree. HTML listens to CSS that's most closest to it.
     * the div {} style with background img code is cruft (excess code that doesn't perform a meaningful function)
-3) text hard to read!
+3) text hard to read! Repositioning element
+  - ADD <p> text color white, background color black. solid color for alpha: 1
 
+p {
+  background: rgba(0,0,0,1); // black background
+  color: rgba(255,255,255,1); // white font
+}
+
+rgba color mixing
+000 black
+255 0 0 red
+0 255 0 Green
+0 0 255 blue
+255 255 255 white
+0 255 255 cyan (green, blue)
+255 0 255 magenta (red, blue)
+255 255 0 yellow (red, green)
+
+- Issue Paragraph containers sill centered in the divs, need fixing
+
+  * Let's format text to make it easy to read!
+    - Add padding around the words, a new style called line-height.  
+    Line-height lets us increase or decrease the vertical space btwn lines.
+    1. give p padding 10 px all around
+    2. use text-align to justify the paragraph style
+    3. set paragraph line-height to 28px
+
+    padding: 10px;
+    text-align: justify;
+    line-height: 28px;

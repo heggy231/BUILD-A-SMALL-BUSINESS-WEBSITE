@@ -52,7 +52,8 @@ div {
           class = tag's attribute
           name = attribute's value
     - ACTION!  Give each div some class!!
-    <div class="first"> <div class="second"> <div class="third">
-
+    <div class="first"> <div class="second"> <div class="dessert">
+      Note: nothing changes yet b/c the page-wide div style is still calling the first background img, and b/c you haven't given the unique classes any background images yet.
+    
 3) text hard to read!
 

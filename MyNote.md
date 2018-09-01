@@ -32,7 +32,13 @@ div {
   background: url(http://dash.ga.co/assets/firstcourse.jpg);
   /* keeps img from tiling */
   background-size: cover; 
-  
+
+  - revision: background-size: cover; stretches the img to full screen width;
+  img to sit in the center of screen.  
+  body {
+    margin: 0 auto;
+    width: 600px;
+  }
 2) All three <div> have the same background img.
 
 3) text hard to read!

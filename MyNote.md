@@ -16,3 +16,24 @@ Version 1:
 
 Wrap all 3 menu items with opening and closing div tags.
 Next, style div tag! (height 200px)
+- done with creating new style for div with height
+- Wrapt with div around each menu items (name, descrip)
+
+* Adding background image (room for pictures)
+div {
+  height: 200px;
+  background: url(http://dash.ga.co/assets/firstcourse.jpg);
+}
+
+- 3 issues at this version
+1) background img 'tiling': repeating to fill the width of the screen
+  solution: give the div a background-size for stop from tiling
+
+  background: url(http://dash.ga.co/assets/firstcourse.jpg);
+  /* keeps img from tiling */
+  background-size: cover; 
+  
+2) All three <div> have the same background img.
+
+3) text hard to read!
+

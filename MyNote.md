@@ -54,6 +54,29 @@ div {
     - ACTION!  Give each div some class!!
     <div class="first"> <div class="second"> <div class="dessert">
       Note: nothing changes yet b/c the page-wide div style is still calling the first background img, and b/c you haven't given the unique classes any background images yet.
-    
+
+    - Note: even though div still says to give all div firstcourse img; class trumps the div instruction.  Therefore, we see first course img only on the first class instruction.  
+div {
+  height: 200px;
+    /* keeps img from tiling */
+  background-size: cover; 
+  background: url(http://dash.ga.co/assets/firstcourse.jpg);
+}
+.first {
+  background: url(http://dash.ga.co/assets/firstcourse.jpg);
+}
+.second {
+  background: url(http://dash.ga.co/assets/secondcourse.jpg);
+}
+.dessert {
+  background: url(http://dash.ga.co/assets/dessertcourse.jpg);
+}
+
+  - Ex of specificity: style flow down in order of specificity.  Class is more specific than div tag.
+  - Summary of what just happened with img, body.  
+    * img is inside of class, div, the body tag.
+    The body tag tells it to be 600 px wide.  It's 200 px tall b/c div style tells it to be.  
+    * It obeys until they disagree. HTML listens to CSS that's most closest to it.
+    * the div {} style with background img code is cruft (excess code that doesn't perform a meaningful function)
 3) text hard to read!
 

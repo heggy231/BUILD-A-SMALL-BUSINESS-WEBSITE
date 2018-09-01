@@ -37,9 +37,22 @@ div {
   img to sit in the center of screen.  
   body {
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
   }
+
+  * Why max-width? In case body width is bigger than its container width (HTML) This prevents overflowing of content.
 2) All three <div> have the same background img.
+  - make different <div> to show 3 images.  Use class on div!
+    this css looks for variety!  not like <p>, <h2> all the same
+    ex) FIRST:CLASS
+    Classes let you name and group HTML tags.
+      ex) <input type="email"> or <pizza size="large" crust="thin" type="pepperoni">
+    HTML for specifying a class looks very similar: 
+      ex) <tag class="name">
+          class = tag's attribute
+          name = attribute's value
+    - ACTION!  Give each div some class!!
+    <div class="first"> <div class="second"> <div class="third">
 
 3) text hard to read!
 

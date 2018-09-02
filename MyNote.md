@@ -120,3 +120,7 @@ rgba color mixing
 
     * Still not quite there since, paragraph isn't all the way at the bottom of the div yet!
       p { margin: 0; } // this will stick p to the bottom of div
+
+  - Move h2 down with p in CSS.  
+    * There is no easy way to bring h2 down where p is with CSS.  We will use cheat!  
+    1st cheat: Get rid of <h2>, and dropping the meal names into the paragraph tags.  

@@ -108,3 +108,9 @@ rgba color mixing
     padding: 10px;
     text-align: justify;
     line-height: 28px;
+
+  - Slide the paragraph down to bottom of div.  We need add new stye to p, div.
+   * This requires 2 steps.  
+   1) position: absolute; to paragraph style.  This will break it out of the document's regular flow.
+   2) bottom: 0; to paragraph.  this will move to zero pixels from the bottom of...
+   

@@ -113,4 +113,10 @@ rgba color mixing
    * This requires 2 steps.  
    1) position: absolute; to paragraph style.  This will break it out of the document's regular flow.
    2) bottom: 0; to paragraph.  this will move to zero pixels from the bottom of...
-   
+
+  - New Issue: We want these paragraphs to be zero pixels from the bottom of each div, but paragraphs are all sitting on top of each other at the page bottom.
+    * Solution: Give div relative to its child element paragraph so paragraph could be position relative to its parents.
+      div { position: relative; }
+
+    * Still not quite there since, paragraph isn't all the way at the bottom of the div yet!
+      p { margin: 0; } // this will stick p to the bottom of div

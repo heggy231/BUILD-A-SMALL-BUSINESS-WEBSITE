@@ -14,7 +14,9 @@ body {
 div {
   height: 200px;
     /* keeps img from tiling */
-  background-size: cover; 
+  background-size: cover;
+  /* so paragraph can have pos: absolute. */
+  position: relative;
 }
 .first {
   background: url(http://dash.ga.co/assets/firstcourse.jpg);
@@ -31,8 +33,10 @@ p {
   padding: 10px;
   text-align: justify;
   line-height: 28px;
+  /* position absolute needs to pair with parent div position relative to work!  This moves p to bottom */
   position: absolute;
-  bottom: 0;
+  bottom: 0; /*positioning p to bottom */
+  margin: 0;
 }
 </style>
 

@@ -154,4 +154,19 @@ rgba color mixing
   HTML has a tag that effects certain content behave differently.  Span tag.
   Use <span> tag inside another tag (inside <p>) to make any bit of content display differently from the rest of the content in the sam tag
 
-  
+    - Use class to make 3 different element behave exactly like one another, by giving them a shared class name.
+
+  - Text-align: right for style class="price"
+  * Nothing happened why not?
+    - Block vs. Inline element.
+    Block takes whole pg width vs. inline only take up as much of the screen as they need to.
+    - span is inline and text-aligh only align blocks to the right.
+      ex) Blocks vs Inline:
+      paragraphs <p>, headers <h1>, <h2>, lists <ul>, <ol>, <li>, divs <div>
+      Inline: Hyperlinks <p>, images <img>, form fields <input>, spans <span>
+
+- The best way to right-justify only the price in our inline spans is CSS property called float.  Floats let you slide the content of a <span>, or more frequently, allow you to slide an image, around inside its container element.
+  .price {
+    float: right;
+  }
+

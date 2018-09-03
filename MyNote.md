@@ -124,3 +124,21 @@ rgba color mixing
   - Move h2 down with p in CSS.  
     * There is no easy way to bring h2 down where p is with CSS.  We will use cheat!  
     1st cheat: Get rid of <h2>, and dropping the meal names into the paragraph tags.  
+
+  - Now all the content is chunked in big paragraphs- How do we break those back up again visually? header and content!
+    * HTML's line break is just the thing for this!!
+    <br> or <br /> self closing tag!
+    * Make rest of the content smaller look
+    <small> </small>
+
+  - divs are stacked tightly on top of each other!  No, we want some spaces inbetween them!
+    * Which CSS element controls space around an HTML element? Margin! Add Margin only on top.
+      margin: 40px 0 0 0;
+
+    * make div round edge
+      border-radius: 12px;
+
+    - Issue: why border only showed up on the top two corners of the <div>?
+     * cuz bottom div is hiding under <p> styling.
+     - action: try commenting out p stying css
+     

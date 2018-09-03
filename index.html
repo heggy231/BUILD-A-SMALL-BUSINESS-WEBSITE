@@ -17,6 +17,9 @@ div {
   background-size: cover;
   /* so paragraph can have pos: absolute. */
   position: relative;
+  margin: 40px 0 0 0;
+  /* make div round edge */
+  border-radius: 12px;
 }
 .first {
   background: url(http://dash.ga.co/assets/firstcourse.jpg);
@@ -27,6 +30,7 @@ div {
 .dessert {
   background: url(http://dash.ga.co/assets/dessertcourse.jpg);
 }
+
 p {
   background: rgba(0,0,0,1);
   color: rgba(255,255,255,1);
@@ -37,7 +41,9 @@ p {
   position: absolute;
   bottom: 0; /*positioning p to bottom */
   margin: 0;
+  border-radius: 12px;
 }
+
 </style>
 
 </head>
@@ -46,15 +52,18 @@ p {
 
   <h1>esha's restaurant</h1>
   <div class="first">
-
-    <p>welsh onion soko $14 Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </p>
+    <p>welsh onion soko $14<br />
+      <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.</small>
+    </p>
   </div>
   <div class="second">
-
-    <p>pastrami boudin tongue $22 Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</p>
+    <p>pastrami boudin tongue $22<br />
+      <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small>
+    </p>
   </div>
   <div class="dessert">
-
-    <p>fruitcake marzipan pudding dragee $8 Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</p>
+    <p>fruitcake marzipan pudding dragee $8<br />
+      <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small>
+    </p>
   </div>
 </body>

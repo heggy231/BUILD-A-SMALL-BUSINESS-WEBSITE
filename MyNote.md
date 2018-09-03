@@ -141,4 +141,17 @@ rgba color mixing
     - Issue: why border only showed up on the top two corners of the <div>?
      * cuz bottom div is hiding under <p> styling.
      - action: try commenting out p stying css
-     
+
+- 3 Missions: 
+  1) More precise ways to position
+  2) Making colors fade across the screen
+  3) Adding some fancy fonts
+
+  1) More precise ways to position:
+  - Adv. Layout:
+    * Move the price flush-right: 
+    p { text-align: right; }
+  HTML has a tag that effects certain content behave differently.  Span tag.
+  Use <span> tag inside another tag (inside <p>) to make any bit of content display differently from the rest of the content in the sam tag
+
+  

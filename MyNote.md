@@ -218,3 +218,17 @@ p {
 4) Copy css rule
   font-family: 'Londrina Shadow', cursive;
 inside h1 { font-family: 'Londrina Shadow', cursive; }
+
+## Some more edits!
+1) Increase h1 font-size: 75px
+  h1 { font-}
+2) Center name of restaurant
+ h1 { text-align: center; }
+
+- Adding subHeading 
+ 1) h2 as subHeading 
+ 2) embelish it 
+  - Center 
+ 3) too much space btwn pg header and subheader!
+  Give h2 negative margin until it looks about right!
+    h2 { margin: -30px;}  

@@ -231,4 +231,30 @@ inside h1 { font-family: 'Londrina Shadow', cursive; }
   - Center 
  3) too much space btwn pg header and subheader!
   Give h2 negative margin until it looks about right!
-    h2 { margin: -30px;}  
+    h2 { margin: -50px 0 70px 0;}  
+
+- advance layout:
+  1) slide h1 down so it is not bumping agatinst the top of the screen.
+   h1 {margin: 60px 0 0 0;}
+  2) Now, header and subheader are overlapping!!
+    h2 { margin: 0 0 70px 0;}  
+
+Restaurant owner's feedback!
+- font looks like chalkboard lettering hand-written 
+Let's make background chalkboard-colored?
+  - body dark gray #232323
+  body { background: #232323; }
+  - h1 text color: #aaaaaa
+  h1 { color: #aaaaaa; }
+  - h2 text color: #bbbbbb
+  h2 { color: #bbbbbb; }
+
+- Part 3 of Esha's restaurant (Responsive Design, Getting Interactive with JS and CSS)
+
+  Mission: 4 things:
+  1) Revisiting
+  2) Styling different screen size
+  3) Simple animation with JS
+  4) animation with CSS!
+
+  

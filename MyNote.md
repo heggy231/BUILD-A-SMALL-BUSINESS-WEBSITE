@@ -257,4 +257,36 @@ Let's make background chalkboard-colored?
   3) Simple animation with JS
   4) animation with CSS!
 
+  * Mobile Best Practices:  
+  - Some Worst Practices: website that are bad: Flash only home page, PDF only menus, music with auto-play loud when land on the site
+
+  1) Looking back Revisiting what we have done for destktop
+   - Some mobile-first quality we already used:
+    * Why we used div
+    * Through the cascade - our images,
+      background-size: cover;
+      instead
+      background-size: 100%;
+      Why we made it cover?
+        - The original img: 200 w X 600 h pixels.  when the screen is less than 600 wide, an img set to be 100% wide becomes less than the assinged 200px height. 
+        - Cover vs. 100% for background-size
+        If background-size to a fixed px or percent, it scales poorly on smaller screens.  from desktop to mobile, when cover, size of the img won't change, only the size of the real estate it occupies onscreen.
+        - If change to background-size: 100%, notice img duplicate, stack vertically as horizontal width get smaller, b/c it's trying to maintain both its proportion and fixed height: 200px;.
+        This is why it's best not to assign img a specific width and height with CSS.
+    - Note: More important to have full img on the screen and sometimes, we want content to show up at smallest viewport.  Another mobile-friendly tip: kepp all the content in one column.
+    MultiColumn layouts require special attention to optimize them for mobile, I am not there yet!
+
+    - div { max-width: 600px; } is motivated for mobile-first design.  Many smartphone width: 700px;  Just need to setup for vertically-oriented phones for now.
+
+  * Media Query: 
+  Issues I see: Headings take up way too much space on tiny screen,  Everything is bumping the left and right edges.  Media queries to the rescue!  They'll help us optimize whitespace and font sizes for narrow screens.  (White space means for designer's world is part of a page that doesn't contain words or pictures.  If page has black background; empty black space is the whitespace!)
+
+  @media (max-width: 500px) {
+    body {
+      background: green;
+    }
+  }
+  // if the screen is less than 500px wide, then style the pg inside of media query rule!
+
   
+

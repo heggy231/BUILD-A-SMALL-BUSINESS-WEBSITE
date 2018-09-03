@@ -28,7 +28,7 @@ h2 {
 div {
   height: 200px;
     /* keeps img from tiling */
-  background-size: cover;
+  background-size: 100%;
   /* so paragraph can have pos: absolute. */
   position: relative;
   margin: 40px 0 0 0;
@@ -63,7 +63,11 @@ p {
 .price {
   float: right;
 }
-
+@media (max-width: 500px) { /* screen less than 500px do this*/
+  body {
+    background: green;
+  }
+}
 </style>
 
 </head>

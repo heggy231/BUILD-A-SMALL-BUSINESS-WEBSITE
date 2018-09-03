@@ -208,3 +208,13 @@ p {
   - Graceful degradation: for browser that does not support background linear-gradient, use p {
   background: rgb(0, 0, 0);
   
+  ## fonts!
+  https://fonts.google.com/
+  - Londrina Shadow https://fonts.google.com/specimen/Londrina+Shadow
+  2) select the font
+  3) copy the link into <head>, above <style>: this tells browser where to look for Londrina Shadow font.  
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+
+4) Copy css rule
+  font-family: 'Londrina Shadow', cursive;
+inside h1 { font-family: 'Londrina Shadow', cursive; }

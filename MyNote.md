@@ -170,3 +170,41 @@ rgba color mixing
     float: right;
   }
 
+- Next fix: black box to not hide picture
+  Use p backgroun rgba alpha channel transparency of a color.  Control alpha on a scale from 0 to 1 (0% color: totally see-through) (100% color: opaque)
+
+  Gradient: 
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));  // opaque to lighter transparency
+
+    - Radial: radiate outward in all directions, from a central point.
+    - Linear: Linear gradients only go in one direction, in a line.
+
+    Rule of linear: start with bottom of the html element that contains it.  When it starts at the bottom, it's black with 100% opacity.
+
+    When it ends at the top, it is black with 40% opacity. begin solid black a the bottom, and end as 40% black at the top.
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+
+    If you change rgb numbers, 
+    yellow, rgba(255,255,0,1) to red, rgba(255,0,0,1) you'd get orange in the middle auto.
+
+    our ex) gradient is black (r=0, g=0, b=0) all the way through, only opacity changes, not color
+    - change solid black background to a semi-transparent linear gradient.
+    ex) 
+    p {background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    }
+
+    - to make linear-gradient work we need vendor-prefix.  
+
+    * chrome, opera, safari: 
+    background: -webkit-linear-gradient;
+    * firebox: 
+    background: -moz-linear-gradient;
+
+p {
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+
+  - Graceful degradation: for browser that does not support background linear-gradient, use p {
+  background: rgb(0, 0, 0);
+  

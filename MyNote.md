@@ -193,7 +193,7 @@ rgba color mixing
     p {background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
     }
 
-    - to make linear-gradient work we need vendor-prefix.  
+    - to make linear-gradient work we need vendor-prefix. ex) webkit moz
 
     * chrome, opera, safari: 
     background: -webkit-linear-gradient;

@@ -314,10 +314,24 @@ Let's make background chalkboard-colored?
   Summary: 1) decrese front size
   2) Adjusting margin (add top little, take out space off of bottom of subheading)
     * Why are we adding space above the subhead?  At smaller sizes, whitespace increases readability.  
-
+@media (max-width: 500px)
 h2 {
     font-size: 20px;
     margin: 20px 0 30px 0;
 }
 
-- 
+- Next fix: Image whitespace:
+  The universal style for div: 40px margin top of each div, no margin assigned to the sides or bottom.
+
+  Fix: Reduce amount of space above the divs, 
+  Add some space to the left and right of each.  
+@media (max-width: 500px)
+   div {
+    margin: 20px 12px 0 12px; 
+  }
+
+- fix: Make Menu item more readable on smaller screen!
+  1) make p font bigger, 
+  2) increase line-height
+  3) <small> to style the item descriptions separately from the names and prices
+@media (max-width: 500px)

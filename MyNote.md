@@ -287,6 +287,37 @@ Let's make background chalkboard-colored?
     }
   }
   // if the screen is less than 500px wide, then style the pg inside of media query rule!
-
+    - Make the screen width 50px when screen less than 500px
+    @media (max-width: 500px) { /* screen less than 500px do this*/
+      h1 {
+        font-size: 50px;
+      }
+    }
+- why put media query at the end?
+  * Css later code matters more
   
+  - h1 fix: Get rid of empty space above and below both headers and between the words esha's restaurant.  
+   1) Shrinking top margin from 60px to 20px 
 
+   2) Decrease the line-height (vertical whitespace btwn two words when they stack for esha's restaurant)
+
+@media (max-width: 500px) { /* screen less than 500px do this*/
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+
+- Styles that are only in the <style> tags get rendered by every screen, unless the media query contradicts them: that's when small screens obey the query.
+  - h2 has no assigned font-size.  Currently, 70px margin-bottom. 
+  Let's make both h2 text-size, margin-bottom smaller.  Add small margin-top for h2
+  Summary: 1) decrese front size
+  2) Adjusting margin (add top little, take out space off of bottom of subheading)
+    * Why are we adding space above the subhead?  At smaller sizes, whitespace increases readability.  
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+}
+
+- 

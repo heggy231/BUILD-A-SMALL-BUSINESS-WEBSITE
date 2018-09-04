@@ -359,3 +359,20 @@ h2 {
   .show-description small {
     opacity: 1;
   }
+
+- test it out!: Apply .show-description class to any div!
+<div class="first show-description">
+  <p>welsh onion soko <span class="price">$14</span><br />
+  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+
+- How to Check JS environment is working.
+<script>
+  alert("JavaScript works!")
+</script>
+</body>
+
+- Review from Jeff's Blog?
+// $() is jQuery which saves you from define chunks of JS in code 
+$("button").on("click", function() {
+  alert("A button was clicked!")
+});

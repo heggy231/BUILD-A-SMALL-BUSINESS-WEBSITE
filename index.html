@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Esha's restaurant</title>
+  <script src="http://dash.ga.co/assets/jquery.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
 <style>
 body {
@@ -67,6 +68,12 @@ p {
 small {
   opacity: 0; 
 }
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
 @media (max-width: 500px) { /* screen less than 500px do this*/
   h1 {
     font-size: 50px;
@@ -96,7 +103,7 @@ small {
 
   <h1>esha's restaurant</h1>
   <h2>A New York City Eatery</h2>
-  <div class="first">
+  <div class="first show-description">
     <p>welsh onion soko <span class="price">$14</span><br />
       <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.</small>
     </p>
@@ -111,4 +118,7 @@ small {
       <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small>
     </p>
   </div>
+  <script>
+      alert("JavaScript works!")
+  </script>
 </body>

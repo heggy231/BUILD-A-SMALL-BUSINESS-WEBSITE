@@ -335,3 +335,27 @@ h2 {
   2) increase line-height
   3) <small> to style the item descriptions separately from the names and prices
 @media (max-width: 500px)
+
+### JAVASCRIPT! css and JS combined show and hide item description when click (tap) the name of a menu item.
+1) CSS: sliding effect animation, hide and appear
+2) JS function 
+
+1) Each menu item will have 2 different "states": 
+  1) where description is visible
+  2) one where description is hidden
+    step1: create the 'hiding' state: description is folded up
+      1) p { height: 30px; }
+      2) small { opacity: 0; }
+
+- HTML elements can have multiple classes attached to them, so you can use JavaScript to add an extra class name to any div.  The new class you'll make will be called .show-description.  
+  Write style for .show-description class; then write JS so the class will only turn on when the description should be visible.  
+
+// if a paragraph is in a class: .show-decription, the p height 150px
+  .show-description p {
+    height: 150px;
+  }
+
+// small tag in .show-description class: opaque: 100%
+  .show-description small {
+    opacity: 1;
+  }

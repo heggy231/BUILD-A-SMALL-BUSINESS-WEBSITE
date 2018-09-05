@@ -376,3 +376,27 @@ h2 {
 $("button").on("click", function() {
   alert("A button was clicked!")
 });
+
+- Time for Nimble finger, accuracy hat!
+  - JS function will toggle .show-description class:
+    if normal div gets clicked: It applies class .show-description
+    If a div with the class .show-description gets clicked: .show-description disappears!
+      $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+      });
+
+      //$('div'): selects all the <div>, the same way that typing div does in CSS stylesheet.  But instead of applying a style, we're applying JS goodness!
+
+      // .on();: Attaching an event listener to the 'div'.
+
+      // 'click': click event is what we are listening for
+
+      // function () { $(this).toggleClass('show-description'); }: function will perform toggle action when hears a click!
+
+    $(this).toggleClass('show-description');
+      // $(this) refer to the div that that was recently clicked!
+      // .toggleClass() adds or removes a specific class from a specific HTML element, depending on whether or not that class is present.  
+      Note: .toggleClass('show-description') needs no period since .toggleClass already knows that whatever follows it will be a class, so you don't need the period at the start of the name.  
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });

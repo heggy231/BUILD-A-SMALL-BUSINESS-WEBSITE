@@ -400,3 +400,15 @@ $("button").on("click", function() {
     $('div').on('click', function() {
         $(this).toggleClass('show-description');
     });
+
+    Add jQuery lib CDN
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+- CSS: Smooth out hide Show transition
+  * CSS property transition: instructs p that anytime its height changes, it should build in a half-sec delay.  Remember the vendor prefix!
+  p{ 
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+  }
+- Final demo: https://dash.generalassemb.ly/heggy/build-your-own-business-website

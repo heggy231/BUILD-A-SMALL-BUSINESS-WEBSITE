@@ -10,3 +10,5 @@ Learning Objectives:
 Version 1:
 1) Creative ways to use background images
 2) How to group and position multiple elements with CSS
+
+Demo: https://dash.generalassemb.ly/heggy/build-your-own-business-website

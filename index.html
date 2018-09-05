@@ -103,7 +103,7 @@ small {
 
   <h1>esha's restaurant</h1>
   <h2>A New York City Eatery</h2>
-  <div class="first show-description">
+  <div class="first">
     <p>welsh onion soko <span class="price">$14</span><br />
       <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.</small>
     </p>
@@ -119,6 +119,8 @@ small {
     </p>
   </div>
   <script>
-      alert("JavaScript works!")
+    $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+    });
   </script>
 </body>
